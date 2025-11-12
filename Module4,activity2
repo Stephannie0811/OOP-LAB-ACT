@@ -1,0 +1,18 @@
+public class MaxElementFinder {
+    public static void main(String[] args) {
+        // Sample array of integers
+        int[] numbers = {25, 47, 3, 89, 56, 99, 12};
+
+        // Assume the first element is the maximum
+        int max = numbers[0];
+
+        // Loop through the array to find the maximum
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+
+        // Display the maximum value
+        System.out.println("The maximum element in the array is: " + max);
+    }
