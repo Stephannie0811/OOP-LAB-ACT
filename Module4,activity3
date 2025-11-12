@@ -1,0 +1,19 @@
+public class AverageCalculator {
+    public static void main(String[] args) {
+        // Array of integer values
+        int[] numbers = {15, 30, 45, 60, 75};
+
+        int sum = 0;
+
+        // Use a for-each loop to sum the values
+        for (int num : numbers) {
+            sum += num;
+        }
+
+        // Calculate the average
+        double average = (double) sum / numbers.length;
+
+        // Display the result
+        System.out.println("The average is: " + average);
+    }
+}
