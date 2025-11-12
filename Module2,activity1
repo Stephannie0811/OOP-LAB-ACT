@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class OddEvenChecker {
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner input = new Scanner(System.in);
+
+        // Prompt the user to enter a number
+        System.out.print("Enter an integer: ");
+        int number = input.nextInt();
+
+        // Check if the number is even or odd using the modulus operator
+        if (number % 2 == 0) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }
+
+        // Close the scanner
+        input.close();
+    }
