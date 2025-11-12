@@ -1,0 +1,26 @@
+class Person:
+    def __init__(self, age):
+        self.age = age  # This will trigger the setter
+
+    @property
+    def age(self):
+        return self.__age
+
+    @age.setter
+    def age(self, value):
+        if isinstance(value, int) and value > 0:
+            self.__age = value
+        else:
+            raise ValueError("Age must be a positive integer.")
+
+# Example usage
+try:
+    person1 = Person(25)
+    print("Person's age:", person1.age)
+
+    person1.age = 30  # Update age
+    print("Updated age:", person1.age)
+
+    person1.age = -5  # This will raise an error
+except ValueError as e:
+    print("Error:", e)
